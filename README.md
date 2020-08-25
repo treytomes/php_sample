@@ -2,9 +2,9 @@
 A single page app that calls a Rest API web service and returns data to a frontend built in ReactJS.
 
 Technologies:
-* Laravel (5.8)
-* PHP (7.1.*)
-* ReactJS
+* [Laravel (5.8)](https://laravel.com/)
+* [PHP (7.1.*)](https://www.php.net/)
+* [ReactJS](https://reactjs.org/)
 * etc.
 
 ## Requirements
