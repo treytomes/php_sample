@@ -19,7 +19,8 @@ Technologies:
 of the current one shown.
 
 ## How to run
-
+1. Download PHP 7.1.33 from [here](https://www.php.net/distributions/php-7.1.33.tar.bz2). 
+2. ?
 
 ## API documentation
 
