@@ -29,6 +29,9 @@ of the current one shown.
     * This should start the ui client at localhost:3000.
 5. You should now be able to direct your browser to http://localhost:3000.
 
+It should look something like this:
+[](/screenshots/screenshot001.jpg)
+
 # API documentation
 
 ## Get a list of genres.

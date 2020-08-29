@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Header, Segment, Image, Grid } from 'semantic-ui-react';
 
-import { API_BASE_URL, IMAGE_BASE_URL } from './config'
+import { IMAGE_BASE_URL } from './config'
 
 class Movie extends Component {
 

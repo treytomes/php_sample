@@ -15,12 +15,8 @@ use Illuminate\Http\Request;
 
 Route::get('/genres', array('middleware' => 'cors', 'uses' => 'MovieController@genres'));
 Route::get('/genres/{name}', array('middleware' => 'cors', 'uses' => 'MovieController@firstInGenre'));
-
-//Route::get('/movies', array('middleware' => 'cors', 'uses' => 'MovieController@index'));
 Route::get('/movies/{id}', array('middleware' => 'cors', 'uses' => 'MovieController@show'));
 Route::get('/movies/{id}/next', array('middleware' => 'cors', 'uses' => 'MovieController@next'));
-//Route::post('/movies', 'MovieController@store');
-//Route::delete('/movies/{id}', 'MovieController@delete');
 
 // This one is for serving up movie posters.
 Route::get('/resources/images/{filename}', function($filename){
