@@ -133,7 +133,3 @@ It should look something like this:
 # References
 
 * [This](https://developer.okta.com/blog/2018/12/06/crud-app-laravel-react) tutorial was useful in getting started.  I left off the authentication bits, and most of the second half of the React tutorial once I got the hang of how it works.
-
-# TODO
-* Error handling in Laravel!
-* List out the files that are different from the frameworks.

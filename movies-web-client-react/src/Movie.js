@@ -5,10 +5,6 @@ import { IMAGE_BASE_URL } from './config'
 
 class Movie extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <Grid columns={2} >

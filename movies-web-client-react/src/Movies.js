@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Container, Dropdown, Grid, Header, Message } from 'semantic-ui-react';
 
-import { API_BASE_URL, IMAGE_BASE_URL } from './config';
+import { API_BASE_URL } from './config';
 import Movie from './Movie';
 
 class Movies extends Component {
@@ -22,7 +22,7 @@ class Movies extends Component {
 
     async getMovieFromGenre(genre) {
         if (this.state.movie) {
-            if (genre == this.state.movie.genre) {
+            if (genre === this.state.movie.genre) {
                 // Load a new movie in the current genre.
                 try {
                     this.setState({ isLoadingMovie: true });
