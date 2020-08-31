@@ -1,6 +1,6 @@
 # API documentation
 
-Rest API at localhost:8000.
+Rest API at http://localhost:8000.
 
 ## Get a list of genres.
 
