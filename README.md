@@ -27,7 +27,7 @@ of the current one shown.
 2. Change the DB_DATABASE variable in ./rest_api/.env to the full path to your copy of ./rest-api/database/sample.sqlite.
 3. Run `composer install` in a console window from ./rest_api.
 4. Run `php artisan serve` in a console window from ./rest_api.
-    * This should start the api client at localhost:8000.
+    * This should start the api client at http://localhost:8000.
 5. Run `npm start` in a console window from ./movies-web-client-react.
     * This should start the ui client at localhost:3000.
 6. You should now be able to direct your browser to http://localhost:3000.
@@ -35,94 +35,6 @@ of the current one shown.
 It should look something like this:
 
 ![](/screenshots/screenshot001.png)
-
-# API documentation
-
-## Get a list of genres.
-
-**URL:** /genres
-
-**Method:** GET
-
-**Content example:**
-```
-{
-    "data": [
-        "action",
-        "comedy",
-        "sci-fi"
-    ]
-}
-```
-
-## Get the first movie in a genre.
-
-**URL:** /genres/:name
-
-**URL Parameters:** name=\[string\], one of 'action', 'comedy', or 'sci-fi'.
-
-**Method:** GET
-
-**Content example:** 
-```
-{
-    "data": {
-        "id": 3,
-        "name": "Gemini Man",
-        "genre": "action",
-        "description": "Henry Brogan is an elite 51-year-old assassin who's ready to call it quits after completing his 72nd job. His plans get turned upside down when he becomes the target of a mysterious operative who can seemingly predict his every move. To his horror, Brogan soon learns that the man who's trying to kill him is a younger, faster, cloned version of himself.",
-        "photo": "gemini_man.jpg",
-        "created_at": "2020-08-29T00:00:00.000000Z",
-        "updated_at":"2020-08-29T00:00:00.000000Z"
-    }
-}
-```
-
-## Get movie details by id.
-
-**URL:** /movies/:id
-
-**URL Parameters:** id=\[integer\], the primary key of the movie in sample.sqlite.
-
-**Method:** GET
-
-**Content example:**
-```
-{
-    "data": {
-        "id": 3,
-        "name": "Gemini Man",
-        "genre": "action",
-        "description": "Henry Brogan is an elite 51-year-old assassin who's ready to call it quits after completing his 72nd job. His plans get turned upside down when he becomes the target of a mysterious operative who can seemingly predict his every move. To his horror, Brogan soon learns that the man who's trying to kill him is a younger, faster, cloned version of himself.",
-        "photo": "gemini_man.jpg",
-        "created_at": "2020-08-29T00:00:00.000000Z",
-        "updated_at":"2020-08-29T00:00:00.000000Z"
-    }
-}
-```
-
-## Get the next movie in a genre.
-
-**URL:** /movies/:id/next
-
-**URL Parameters:** id=\[integer\], the primary key of the movie in sample.sqlite.
-
-**Method:** GET
-
-**Content example:** 
-```
-{
-    "data": {
-        "id": 3,
-        "name": "Gemini Man",
-        "genre": "action",
-        "description": "Henry Brogan is an elite 51-year-old assassin who's ready to call it quits after completing his 72nd job. His plans get turned upside down when he becomes the target of a mysterious operative who can seemingly predict his every move. To his horror, Brogan soon learns that the man who's trying to kill him is a younger, faster, cloned version of himself.",
-        "photo": "gemini_man.jpg",
-        "created_at": "2020-08-29T00:00:00.000000Z",
-        "updated_at":"2020-08-29T00:00:00.000000Z"
-    }
-}
-```
 
 ## Notes
 
