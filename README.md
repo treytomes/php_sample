@@ -25,12 +25,13 @@ of the current one shown.
 
 1. Clone this repository to somewhere local.
 2. Change the DB_DATABASE variable in ./rest_api/.env to the full path to your copy of ./rest-api/database/sample.sqlite.
-3. Run `composer install` in a console window from ./rest_api.
+3. Run `composer install` in a console window from ./rest_api to install dependencies.
 4. Run `php artisan serve` in a console window from ./rest_api.
     * This should start the api client at http://localhost:8000.
-5. Run `npm start` in a console window from ./movies-web-client-react.
+5. Run `npm install` in a console window from ./movies-web-client-react to install dependencies.
+6. Run `npm start` in a console window from ./movies-web-client-react.
     * This should start the ui client at localhost:3000.
-6. You should now be able to direct your browser to http://localhost:3000.
+7. You should now be able to direct your browser to http://localhost:3000.
 
 It should look something like this:
 
